@@ -1,0 +1,242 @@
+/* ============================================================
+   Mensajería Móvil — Tema "Cielo & Lavanda"
+   ============================================================ */
+
+:root{
+  --blue-1: #A8D2F0;
+  --blue-2: #C7B9F0;
+  --blue-deep: #6C8FE3;
+  --blue-dark: #5674CC;
+  --pink: #F5A9C4;
+  --ink: #3A3F5C;
+  --muted: #8E93B0;
+  --card: #FFFFFF;
+  --bg-soft: #F1F4FD;
+  --success: #4FBE8D;
+  --success-bg: #E4F7EE;
+  --danger: #E0577A;
+  --danger-bg: #FDEBF1;
+}
+
+body {
+  background: linear-gradient(160deg, #EAF2FB 0%, #F1EEFA 55%, #F6EEF7 100%);
+  font-family: 'Nunito', sans-serif;
+  color: var(--ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.app-navbar {
+  background: linear-gradient(90deg, var(--blue-deep) 0%, var(--pink) 130%);
+  box-shadow: 0 6px 18px -10px rgba(86, 116, 204, 0.55);
+}
+.app-navbar .navbar-brand {
+  font-family: 'Baloo 2', sans-serif;
+  letter-spacing: 0.01em;
+}
+.app-navbar .nav-link {
+  font-weight: 600;
+}
+
+/* ---------- Cards / contenedores ---------- */
+.bg-white.rounded-3.shadow-sm {
+  border-radius: 22px !important;
+  box-shadow: 0 16px 40px -22px rgba(86, 116, 204, 0.45) !important;
+  border: 1px solid #EEF1FC;
+}
+
+.card-resumen {
+  border: none;
+  border-radius: 16px;
+  padding: 1.25rem;
+  height: 100%;
+  background: var(--bg-soft);
+}
+.card-resumen .valor {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+/* ---------- Botones ---------- */
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue-deep), var(--pink));
+  border: none;
+  font-weight: 700;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px -8px rgba(86, 116, 204, 0.6);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(135deg, var(--blue-dark), var(--pink));
+}
+
+.btn-outline-primary {
+  color: var(--blue-dark);
+  border-color: var(--blue-deep);
+  border-radius: 12px;
+  font-weight: 700;
+}
+.btn-outline-primary:hover {
+  background: var(--blue-deep);
+  border-color: var(--blue-deep);
+}
+
+.btn-secondary, .btn-outline-secondary {
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.btn-success { background: var(--success); border: none; border-radius: 12px; font-weight: 700; }
+.btn-danger  { background: var(--danger); border: none; border-radius: 12px; font-weight: 700; }
+.btn-outline-danger { color: var(--danger); border-color: var(--danger); border-radius: 12px; font-weight: 700; }
+.btn-sm { border-radius: 10px; }
+
+/* ---------- Formularios ---------- */
+.form-control, .form-select {
+  border-radius: 12px;
+  border: 2px solid #E7ECFB;
+  background: var(--bg-soft);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--blue-deep);
+  box-shadow: 0 0 0 0.15rem rgba(108, 143, 227, 0.25);
+  background: #fff;
+}
+
+/* ---------- Texto / utilidades ---------- */
+.text-primary { color: var(--blue-dark) !important; }
+
+/* ---------- Insignias de estado ---------- */
+.badge-estado-conectado {
+  background-color: var(--success);
+}
+.badge-estado-desconectado {
+  background-color: var(--muted);
+}
+.badge.bg-success { background-color: var(--success) !important; }
+.badge.bg-warning { background-color: #F3C969 !important; }
+.badge.bg-danger  { background-color: var(--danger) !important; }
+.badge.bg-secondary { background-color: var(--muted) !important; }
+
+/* ---------- Alertas ---------- */
+.alert-success { background: var(--success-bg); color: #2F7B5C; border: none; border-radius: 12px; }
+.alert-danger  { background: var(--danger-bg); color: var(--danger); border: none; border-radius: 12px; }
+
+/* ---------- Tablas ---------- */
+.table thead th {
+  color: var(--muted);
+  font-weight: 700;
+  border-bottom: 2px solid var(--bg-soft);
+}
+.table td, .table th { border-color: var(--bg-soft); }
+
+/* ---------- Tarjeta de autenticación (login/registro) ---------- */
+.auth-wrap{
+  width: 100%;
+  max-width: 380px;
+  margin: 5vh auto;
+  position: relative;
+  z-index: 1;
+}
+.auth-bubble{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 14px;
+  background: linear-gradient(135deg, var(--blue-deep), var(--pink));
+  border-radius: 20px 20px 20px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px -6px rgba(86, 116, 204, 0.55);
+}
+.auth-bubble svg{ width: 26px; height: 26px; }
+
+.auth-card {
+  max-width: 380px;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 26px 22px;
+  box-shadow: 0 20px 40px -18px rgba(86, 116, 204, 0.45);
+}
+
+.auth-title {
+  text-align: center;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 4px;
+}
+.auth-sub {
+  text-align: center;
+  font-size: 13px;
+  color: #6C7396;
+  margin-bottom: 22px;
+}
+
+.auth-card label.form-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.auth-card a { color: var(--blue-dark); font-weight: 700; text-decoration: none; }
+.auth-card a:hover { text-decoration: underline; }
+
+.rol-toggle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+.rol-toggle button{
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 6px;
+  border-radius: 11px;
+  cursor: pointer;
+  color: var(--blue-dark);
+}
+.rol-toggle button.active{
+  background: linear-gradient(135deg, var(--blue-deep), #8AA6EA);
+  color: #fff;
+}
+
+/* ---------- Decoración de fondo (login/registro) ---------- */
+.sky-decor{
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.sky-decor::before, .sky-decor::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.sky-decor::before{
+  width: 260px; height: 260px;
+  background: radial-gradient(circle at 30% 30%, #FFFFFF80, transparent 70%);
+  top: -60px; left: -60px;
+}
+.sky-decor::after{
+  width: 320px; height: 320px;
+  background: radial-gradient(circle at 70% 70%, #FFD6E8AA, transparent 70%);
+  bottom: -80px; right: -80px;
+}
+.sparkle{
+  position: absolute;
+  color: #FFFFFFCC;
+}
